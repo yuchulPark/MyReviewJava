@@ -8,6 +8,7 @@ public class CircleVolume {
 		Scanner scan = new Scanner(System.in);
 		int radius, height; // 반지름, 높이
 		double volume; // 넓이
+		
 		System.out.println("원기둥 밑면의 반지름을 입력하세요.");
 		radius = scan.nextInt();
 		System.out.println("원기둥 높이를 입력하세요.");
