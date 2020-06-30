@@ -1,14 +1,30 @@
 /*
 
+사용자 만들기
+- create user c##yuchul identified by yuchul;
 
+데이터베이스에 연결할 수 있는 권한을 주는 명령어
+- grant connect, resource, dba to c##yuchul;
 
+SELECT [all | distinct] 속성 이름
+	FROM 테이블 이름
+		WHERE 검색 조건
+			GROUP BY 속성 이름
+				HAVING 검색 조건
+					ORDER BY 속성이름 [asc | desc];
 
+참조 무결성에 위배되는 경우 - 부모의 key에는 숫자가 없는데 자식의 key에는 숫자가 있을경우 발생
+개체 무결성에 위배되는 경우 - PK(부모의 key)에 같은 숫자가 나올경우 발생
 
+서브 쿼리
+- 부속 질의. 중첩 질의
+- sql문 내에 또 다른 sql문이 있음
+- 서브 쿼리의 건수가 하나면 '=' 사용 가능
+- 서브 쿼리 건수가 여러개면 in () 사용 
+  (다중행 연산자 : in(=과 매치), all any some(비교 연산자와 매치))
+- 질의문 안에 포함되는 또 다른 질의문
 
-
-
-
-
+248페이지부터 하기
 
 
 

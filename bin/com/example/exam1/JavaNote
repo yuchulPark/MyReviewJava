@@ -127,9 +127,15 @@ Wrapper 클래스 - 기본 자료형을 참조 자료형(객체)으로 만들어주는 클래스
 		- String - 변하지 않는 문자열 처리에 적합
 		- StringBuffer, StringBuilder - 변하는 문자열 처리에 적합
 	
-
-
-
+멀티 Thread 프로그래밍
+- 일처리를 공평하게 처리하고자 함 : 쓰레드를 가동 (run()을 직접 호출 => 일반 메소드로 취급. 가동시킬려면 start()를 호출해야함)
+- Thread, Runnable
+- run 메소드를 overriding함
+- 가급적이면 공평하게 실행됨 (늘 언제나 1:1로 동작하는건 아님)
+- 가능하면 두 개 이상의 객체가 동시에 어떤 일을 수행하도록 하게끔 하는 프로그래밍
+- Thread 클래스를 상속받거나, Runnable 인터페이스를 구현하거나, run 메소드를 overriding하여 그 안에 공평하게 실행시키고자 하는 명령어들을 작성
+- Runnable 인터페이스를 구현한 경우에는 그 객체가 직접 start를 호출할 수 없음 => Thread 클래스를 통해서 start()를 호출
+  (Runnable 인터페이스는 body가 구체화된 start 메소드가 없음 => Thread 객체를 통해서 가동)
 
 	    
 */
